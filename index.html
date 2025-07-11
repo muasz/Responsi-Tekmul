@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SDG 4: Pendidikan Berkualitas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎓 SDG 4: Pendidikan Berkualitas</h1>
+      <p>Yuk uji pengetahuanmu tentang pentingnya pendidikan!</p>
+    </header>
+
+    <section class="video-section">
+  <h2>🎬 Apa itu SDG 4?</h2>
+  <video controls width="100%" poster="img/preview.jpg">
+    <source src="media/sdg4-video.mp4" type="video/mp4" />
+    Browser tidak mendukung video ini.
+  </video>
+</section>
+
+
+    <main>
+      <img src="img/sdg4-ilustrasi.png" alt="Ilustrasi pendidikan" class="hero-image" />
+
+      <button class="start-btn" onclick="mulaiKuis()">🎮 Mulai Kuis</button>
+
+      <section id="kuis" class="kuis tersembunyi">
+        <div id="soal-container"></div>
+        <p id="hasil" class="hasil"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 - Multimedia Interaktif SDG 4. Dibuat oleh MauasAbdussalam.</p>
+    </footer>
+  </div>
+
+  <audio id="narasi" src="media/narasi-sdg4.mp3" preload="auto"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

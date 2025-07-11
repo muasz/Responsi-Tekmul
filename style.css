@@ -1,0 +1,164 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background gradien cerah */
+body {
+  background: linear-gradient(135deg, #f9f7f3, #e0f7fa);
+  color: #333;
+  padding: 20px;
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 720px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+header p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Tombol mulai */
+.start-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(to right, #1976d2, #2196f3);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.start-btn:hover {
+  background: linear-gradient(to right, #1565c0, #1e88e5);
+  transform: scale(1.05);
+}
+
+/* Kuis */
+.kuis {
+  margin-top: 30px;
+}
+
+/* Soal */
+.soal {
+  background-color: #f3f8fd;
+  border: 2px solid #e0eaf5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  animation: slideUp 0.5s ease;
+}
+
+.soal p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #0d47a1;
+}
+
+/* Tombol jawaban */
+.soal button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #e3f2fd;
+  border: 2px solid #bbdefb;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.soal button:hover {
+  background-color: #bbdefb;
+  border-color: #90caf9;
+  transform: scale(1.02);
+}
+
+/* Hasil jawaban */
+.hasil {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .start-btn, .soal button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.video-section {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.video-section h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 10px;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto 25px auto;
+  max-width: 200px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
